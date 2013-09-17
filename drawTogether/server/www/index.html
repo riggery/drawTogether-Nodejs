@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Draw Together -- MultiPlayer Drawing Game -- NodeJS Project</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="http://128.237.223.171:3000/socket.io/socket.io.js"></script>
+    <script type="text/javascript">
+        var socket = io.connect('128.237.223.171:3000');
+    </script>
+
+     <script type="text/javascript">
+        
+    </script>
+    <style>
+       
+    </style>
+</head>
+<body>
+
+
+
+<div id="head_wrap">
+    <!--<h1>Draw Together</h1>-->
+</div>
+<div id="body_wrap">
+ <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">DrawTogether</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+    <div class="col-xs-8 col-md-8">
+        <div id="drawpad_wrap">
+            <div class="fa">
+                <canvas id="canvas" width="740" height="420">Not support canvas tag</canvas>
+                <div id="div1"></div>
+            </div>
+        </div>
+        <div id="editpad_wrap">
+           <div class="top">
+                <div id="color">
+                    Select Paint Color：
+                    <input class="i1" type="button" value="" />
+                    <input class="i2" type="button" value="" />
+                    <input class="i3" type="button" value="" />
+                    <input class="i4" type="button" value="" />
+                    <input class="i5" type="button" value="" />
+                    <input class="i6" type="button" value="" />
+                    <input class="i7" type="button" value="" />
+                    <input class="i8" type="button" value="" />
+                    <input class="i9" type="button" value="" />
+                </div>
+                <div class="font" id="font">
+                    Select stroke weight：
+                    <input type="button" value="light" />
+                    <input type="button" value="regular" class="grea"/>
+                    <input type="button" value="bold" />
+                </div>
+                <div>
+                    <span id="error">Eraser：</span>
+                    <input id="eraser" style="width:60px;font-size:14px;"type="button" value="Eraser" />
+                </div>
+                
+                <input id="clear" type="button" value="Clear Canvas" style="width:80px;"/>
+                <input id="revocation" type="button" value="Redo" style="width:80px;"/>
+                <!--<input id="imgurl" type="button" value="导出图片路径" style="width:80px;"/>-->
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-4 col-md-4">
+        <div id="chat_slider">
+            <div id="conversation"></div>
+        </div>
+        <div id="chat_input">
+            <input id="data" style="width:200px;" />
+            <input type="button" style="float:right" id="datasend" value="send" />
+        </div>
+
+    </div>
+
+    </div>
+
+    <label>Player List</label>
+    <div id="playerListBox">
+        <ul id="player_list">
+
+        </ul>
+    </div>
+
+    <div id="room_list">
+    </div>
+
+    <!--<div id="room_control">
+        <input type="button" id="room_create" value="Create Room" />
+    </div>-->
+
+    <div id="question_box">
+    </div>
+
+    <!--<div style="float:left;width:100px;border-right:1px solid black;height:300px;padding:10px;overflow:scroll-y;">
+    <b>ROOMS</b>
+    <div id="rooms"></div>-->
+</div>
+
+</div>
+<script type="text/javascript" src="drawSth.js"></script>
+<script type="text/javascript" src="login.js"></script>
+<script type="text/javascript" src="verb.js"></script>
+
+</body>
+</html>

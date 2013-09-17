@@ -1,0 +1,111 @@
+*{margin:0;padding:0;}
+
+body{
+	background:#563D7C;
+}
+
+#head_wrap {
+	height: 80px;
+	/*background: url(/img/top.jpg) no-repeat scroll 0 0 transparent;*/
+	max-width: 1258px;
+	min-width: 980px;
+	margin: 0 auto;
+}
+
+#header, #body_wrap, #foot_wrap {
+	width: 978px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#chat_slider{
+	float: right;
+	position: relative;
+	margin-top: 0px;
+	background-color: #FFF;
+	border: 1px solid #E6E8E8;
+	width: 200px;
+	padding: 10px;
+}
+
+#chat_input{
+	float: right;
+	position: relative;
+	margin-top: 0px;
+	
+	border: 0px solid #E6E8E8;
+	width: 200px;
+	padding-top: 10px;
+}
+
+
+#playerListBox
+{  
+   margin-left: 100px;
+   height:50px; 
+   width:1000px;
+   border-style:solid;
+	border-width:1px;
+   /*background:#FE7E01;*/
+   float:right;
+   padding: 5px 10px;
+}
+
+#player_list li
+{  
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+}
+
+
+
+
+
+#chat_slider{
+	height: 350px;
+	overflow: auto;
+}
+#chat_input{
+	height: 50px;
+}
+
+
+
+
+#mainpad_wrap {
+	margin-top:30px;
+    float: left;
+	width: 638px;
+	position: relative;
+}
+
+
+
+
+.top{margin:20px 0;}
+.top input{width:50px;height:25px;border:1px solid #fff;border-radius:4px;background:#ddd;}
+.top .i1{background:#000000;}
+.top .i2{background:#FF0000;}
+.top .i3{background:#80FF00;}
+.top .i4{background:#00FFFF;}
+.top .i5{background:#808080;}
+.top .i6{background:#FF8000;}
+.top .i7{background:#408080;}
+.top .i8{background:#8000FF;}
+.top .i9{background:#CCCC00;}
+
+.font input{font-size:14px;}
+.top .grea{background:#aaa;}
+
+#canvas
+{  
+   background:#eee;
+   cursor:default;
+}
+
+
+
+
+
+

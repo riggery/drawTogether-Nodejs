@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>MultiPlayer Drawing Game</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="http://128.237.185.161:3000/socket.io/socket.io.js"></script>
+    <script type="text/javascript">
+        var socket = io.connect('128.237.185.161:3000');
+    </script>
+</head>
+<body>
+
+<!--Login-->
+<!--START------ LOGIN REGISTER PAGE --> 
+<div id="login_wrap">
+    <div id="login" class="ui-page ui-body-c ui-page-active" data-role="page" data-url="home" tabindex="0" style="min-height: 230px;">
+        <div ID='logincol' data-role="collapsible" data-theme="d">  
+            <h3>Log In</h3>
+            <form id="login_form" name='login' class="login_form">
+                <label class="ui-hidden-accessible ui-input-text">Email Address</label>
+                <input id="login_email" class="login_email ui-input-text ui-body-c ui-corner-all" type="email" aria-required="true" placeholder="Email Address" value="" name="login"></input>
+                <label class="ui-hidden-accessible ui-input-text">Password</label>
+                <input id="login_pwd" class="login_pwd ui-input-text ui-body-c ui-corner-all" type="password" placeholder="Password" autocomplete="off" name="password"></input>
+                <input id='login_btn' class="ui-btn-hidden" type="button" name="login_submit" value="Log In"></input>
+            </form>
+        </div>
+        <div id='signupcol' data-role="collapsible">
+            <h3>Sign Up</h3>
+            <form id="register_form" name='registeration'>
+                <label class="ui-hidden-accessible ui-input-text">Email Address</label>
+                <input id="register_email" name='register_email' class="register_email ui-input-text ui-body-c ui-corner-all" placeholder="Email Address"></input>
+                <label class="ui-hidden-accessible ui-input-text">username</label>
+                <input id="register_username" class="register_username ui-input-text ui-body-c ui-corner-all" aria-required="true" placeholder="Username" value="" name="username"></input>
+                <label class="ui-hidden-accessible ui-input-text">Password</label>
+                <input id="register_pwd" name='register_pwd' class="register_password ui-input-text ui-body-c ui-corner-all" type="password" placeholder="Password"></input>
+                <label class="ui-hidden-accessible ui-input-text" for="confirm_password">Confirm Password</label>
+                <input id="confirm_pwd" name='confirm_pwd' class="confirm_password ui-input-text ui-body-c ui-corner-all" type="password" placeholder="Confirm Password"></input>
+                <input id='register_btn' class="ui-btn-hidden" type="button" name="register_submit" value="Register"></input>
+            </form>
+        </div> 
+    </div>
+</div>
+<script type="text/javascript" src="login.js"></script>
+</body>
+</html>
